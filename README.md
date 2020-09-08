@@ -10,4 +10,4 @@ AllDataModel.ipynb
 
 The microsoft stock data is linked on the main blog page but there is also a .txt file in this repository:
 
-[msft.us.txt](harrymankhan/predictingthemarket/msft.us.txt)
+[msft.us.txt](predictingthemarket/msft.us.txt)
