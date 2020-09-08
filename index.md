@@ -1,4 +1,6 @@
-Data fuels the modern world. Large corporations, from Facebook to Google, rely on the data of individuals to understand and target consumers and users in the cloud. The majority of data processing is done with computers, afterall, computers are exceptional at data analysis; they can analyze thousands of  pieces of data in an instant, draw conclusions, find patterns, extrapolate, and predict. The methods by which this is done has advanced over the decades—manual and repetitive input and analysis of data have been replaced by machine learning models capable of much more. In this project, we wanted to explore the ways we could use a certain type of machine learning model to make predictions about a specific stock, in this case Microsoft. 
+Data fuels the modern world. Large corporations, from Facebook to Google, rely on the data of individuals to understand and target consumers and users in the cloud. The majority of data processing is done with computers, afterall, computers are exceptional at data analysis; they can analyze thousands of  pieces of data in an instant, draw conclusions, find patterns, extrapolate, and predict. The methods by which this is done has advanced over the decades—manual and repetitive input and analysis of data have been replaced by machine learning models capable of much more. 
+
+In this project, we wanted to explore the ways we could use a machine learning model to make predictions about a specific stock, in this case Microsoft. 
 
 # Content
 - [Initial Problem](#initial-problem)
@@ -17,9 +19,12 @@ The question we wish to answer is very simple: can we predict day-to-day opening
 
 There are countless machine learning models, each with its own pros and cons. We decided to go with a model known as Long Short-Term Memory (LSTM), a type of Recurrent Neural Network (RNN). Why this model? For several reasons.
 
-The point of a stock analysis is to use trends in the data to predict future prices. A model that is incapable of taking into account past data (such as in the past 10, 15, or 30 days) is useless to us. Past data is key here. 
-LSTM models give us a simple way to process entire sequences of data (also known as time series data) and lets us extrapolate the following day(s)
-Vanilla RNN’s have a problem with a vanishing gradient, in other words the learning completely dissipates as the data reaches the end of the neural network. LSTM’s deal with this problem effectively by adding a unique additive gradient structure. 
+1. The point of a stock analysis is to use trends in the data to predict future prices. A model that is incapable of taking into account past data (such as in the past 10, 15, or 30 days) is useless to us. Past data is key here. 
+2. LSTM models give us a simple way to process entire sequences of data (also known as time series data) and lets us extrapolate the following day(s)
+Vanilla RNN’s have a problem with a vanishing gradient, in other words the learning completely dissipates as the data reaches the end of the neural network. LSTM’s deal with 
+3. this problem effectively by adding a unique additive gradient structure. 
+
+
 
 ## Datasets
 
