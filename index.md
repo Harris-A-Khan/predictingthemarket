@@ -32,17 +32,17 @@ Regardless of which stock we choose to continue this project with, there are man
 
 In this project, we gathered data and code from a variety of sources. Our large set of opening data was taken from:
 
-https://www.kaggle.com/borismarjanovic/price-volume-data-for-all-us-stocks-etfs
+[Huge Stock Market Dataset](https://www.kaggle.com/borismarjanovic/price-volume-data-for-all-us-stocks-etfs)
 
 Our set of monthly unemployment rates was taken from:
 
-https://www.kaggle.com/tunguz/us-monthly-unemployment-rate-1948-present
+[US Monthly Unemployment Rate 1948 - Present](https://www.kaggle.com/tunguz/us-monthly-unemployment-rate-1948-present)
 
 Our set of monthly housing starts was taken from:
 
-https://fred.stlouisfed.org/series/HOUST
+[Housing Starts: Total: New Privately Owned Housing Units Started](https://fred.stlouisfed.org/series/HOUST)
 
 And lastly, many of the functions of our code was adapted from:
 
-https://github.com/krishnaik06/Stock-MArket-Forecasting
+[https://github.com/krishnaik06/Stock-MArket-Forecasting](https://github.com/krishnaik06/Stock-MArket-Forecasting)
 
