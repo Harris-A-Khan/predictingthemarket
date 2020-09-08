@@ -9,8 +9,8 @@ Data fuels the modern world. Large corporations, from Facebook to Google, rely o
 - [Moving Forward]
 - [Citations]
 
-<a name="initp"> 
-## Initial Problem
+## <a name="initp"> 
+Initial Problem
 </a>
 
 The question we wish to answer is very simple: can we predict day-to-day opening prices for Microsoft's stock. 
