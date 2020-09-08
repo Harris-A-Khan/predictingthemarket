@@ -1,13 +1,13 @@
 Data fuels the modern world. Large corporations, from Facebook to Google, rely on the data of individuals to understand and target consumers and users in the cloud. The majority of data processing is done with computers, afterall, computers are exceptional at data analysis; they can analyze thousands of  pieces of data in an instant, draw conclusions, find patterns, extrapolate, and predict. The methods by which this is done has advanced over the decades—manual and repetitive input and analysis of data have been replaced by machine learning models capable of much more. In this project, we wanted to explore the ways we could use a certain type of machine learning model to make predictions about a specific stock, in this case Microsoft. 
 
 # Content
--Initial Problem 
--The Model 
--Datasets
--Results 
--Conclusion
--Moving Forward
--Citations
+- Initial Problem 
+- The Model 
+- Datasets
+- Results 
+- Conclusion
+- Moving Forward
+- Citations
 
 ## Initial Problem
 
