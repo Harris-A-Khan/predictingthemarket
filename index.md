@@ -23,7 +23,7 @@ LSTM models give us a simple way to process entire sequences of data (also known
 Vanilla RNN’s have a problem with a vanishing gradient, in other words the learning completely dissipates as the data reaches the end of the neural network. LSTM’s deal with this problem effectively by adding a unique additive gradient structure. 
 
 ### Moving Forward
-	There are many different directions we could take this project in the future. We still aren’t very satisfied with the accuracy of our predictions. There are many ways we can go about tweaking the accuracy, though all involve trial and error:
+There are many different directions we could take this project in the future. We still aren’t very satisfied with the accuracy of our predictions. There are many ways we can go about tweaking the accuracy, though all involve trial and error:
 	The first thing we thought about trying was using a different company’s stock. Under our current models, the predictions didn’t seem to pick up on patterns in the opening prices. The model performed very well when it came to predicting the training data, but when it came to predicting new data, it performed poorly. We think this happens because Microsoft stock is too volatile and unpredictable—there are no repeating patterns in the long-term. Perhaps a different company’s stock, specifically one outside the tech industry, would react differently to certain indicators and in turn become more predictable. Or, instead of just using one stock’s price, we use multiple and see if our model can pick up on trends between both sets of data.
 	Regardless of which stock we choose to continue this project with, there are many changes we can make in creating our model.  
 
