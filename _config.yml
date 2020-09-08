@@ -1,4 +1,4 @@
 theme: jekyll-theme-midnight
 title: Predicting the Market with Machine Learning
 github:
-  is_project_page: fals
+  is_project_page: false
