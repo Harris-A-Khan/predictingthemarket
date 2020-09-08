@@ -21,11 +21,11 @@ The point of a stock analysis is to use trends in the data to predict future pri
 LSTM models give us a simple way to process entire sequences of data (also known as time series data) and lets us extrapolate the following day(s)
 Vanilla RNN’s have a problem with a vanishing gradient, in other words the learning completely dissipates as the data reaches the end of the neural network. LSTM’s deal with this problem effectively by adding a unique additive gradient structure. 
 
-##Datasets
+## Datasets
 
-##Results
+## Results
 
-##Conclusions
+## Conclusions
 
 ## Moving Forward
 There are many different directions we could take this project in the future. We still aren’t very satisfied with the accuracy of our predictions. There are many ways we can go about tweaking the accuracy, though all involve trial and error:
