@@ -2,12 +2,12 @@ Data fuels the modern world. Large corporations, from Facebook to Google, rely o
 
 # Content
 - [Initial Problem](#initial-problem)
-- [The Model] 
-- [Datasets]
-- [Results] 
-- [Conclusion]
-- [Moving Forward]
-- [Citations]
+- [The Model])(#the-model)
+- [Datasets](#datasets)
+- [Results](#results)
+- [Conclusions](#conclusions)
+- [Moving Forward](#moving-forward)
+- [Citations](#citations)
 
 ## Initial Problem
 
