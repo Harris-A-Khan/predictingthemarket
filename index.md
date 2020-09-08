@@ -20,9 +20,8 @@ The question we wish to answer is very simple: can we predict day-to-day opening
 There are countless machine learning models, each with its own pros and cons. We decided to go with a model known as Long Short-Term Memory (LSTM), a type of Recurrent Neural Network (RNN). Why this model? For several reasons.
 
 1. The point of a stock analysis is to use trends in the data to predict future prices. A model that is incapable of taking into account past data (such as in the past 10, 15, or 30 days) is useless to us. Past data is key here. 
-2. LSTM models give us a simple way to process entire sequences of data (also known as time series data) and lets us extrapolate the following day(s)
-Vanilla RNN’s have a problem with a vanishing gradient, in other words the learning completely dissipates as the data reaches the end of the neural network. LSTM’s deal with 
-3. this problem effectively by adding a unique additive gradient structure. 
+2. LSTM models give us a simple way to process entire sequences of data (also known as time series data) and lets us extrapolate the following day(s).
+3. Vanilla RNN’s have a problem with a vanishing gradient, in other words the learning completely dissipates as the data reaches the end of the neural network. LSTM’s deal with this problem effectively by adding a unique additive gradient structure. 
 
 
 
