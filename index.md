@@ -53,7 +53,9 @@ We compared this error to the error we presumed a human could get with basic gue
 
 
 
-Model trained on only opening data (Model 1)
+<p align ="center">
+  <b>Model trained on only opening data (Model 1)</b>
+    </p>
 
 embed images of results for first model
 Caption: The orange line on the left graph depicts our first model’s prediction of opening prices. The graph on the right shows the real data.
