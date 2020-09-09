@@ -27,7 +27,7 @@ There are countless machine learning models, each with its own pros and cons. We
 
 ### Understanding Time Series
 ![image](images/image1.png)
-<p align ="center">(Image from: [towardsdatascience.com](https://towardsdatascience.com/predicting-stock-price-with-lstm-13af86a74944)</p>
+<p align ="center"><a href="https://towardsdatascience.com/predicting-stock-price-with-lstm-13af86a74944%22%3Etowardsdatascience.com</a></p>
 <br />
 Suppose we want to use a machine learning model to predict the temperature tomorrow. When we train our model, we want it to make predictions based off of three days prior. For example, if I want to know what the temperature will be on the 15th of this month, and I have the temperature for every day this month, I only want to use the temperature from the 12th, 13th, and 14th to make a prediction of the temperature on the 13th. This 3 day interval is what is known as the time step. We could get this model to predict the temperature over however many days we prefer but after a couple days it becomes random guessing. Suppose we wanted to use three days of temperatures to calculate the next three days. Temperatures from 12th, 13th, and 14th would be used to predict the temperature on the 15th. Then the data would shift one day over to predict the temperature on the 16th (Shift from 12th, 13th, 14th to 13th, 14th, and predicted 15th). It would do this predicting and shifting for however many days we specify. 
 
@@ -43,7 +43,13 @@ For this project, we trained three separate models, each trained on different se
 
 ## Results
 
-Before we jump right into the results, we think it’s best to clarify how we measured how well our models were predicting. We used a commonly used statistical measure of error known as root-mean-squared error (RMSE). RMSE is a measure of the differences between values predicted by a model and the values observed. So, in our case, we measured the difference between 30 predicted days by our model and real data from our large dataset (data that we didn’t train the model on). We compared this error to the error we presumed a human could get with basic guessing. Let’s say someone keeps guessing that tomorrow’s stock price will be the same as today, and they keep doing this over the course of the 30 day time period. This would produce an error that we could also apply RMSE to. This is what we called the ‘base error’ and it acted as a sort of benchmark. This is how each of our models performed:
+Before we jump right into the results, we think it’s best to clarify how we measured how well our models were predicting. We used a commonly used statistical measure of error known as root-mean-squared error (RMSE). RMSE is a measure of the differences between values predicted by a model and the values observed. So, in our case, we measured the difference between 30 predicted days by our model and real data from our large dataset (data that we didn’t train the model on). 
+
+![image](images/imagermse.jpg)
+
+We compared this error to the error we presumed a human could get with basic guessing. Let’s say someone keeps guessing that tomorrow’s stock price will be the same as today, and they keep doing this over the course of the 30 day time period. This would produce an error that we could also apply RMSE to. This is what we called the ‘base error’ and it acted as a sort of benchmark. This is how each of our models performed:
+
+
 
 Model trained on only opening data (Model 1)
 
