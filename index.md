@@ -57,8 +57,8 @@ We compared this error to the error we presumed a human could get with basic gue
   <b>Model trained on only opening data (Model 1)</b>
     </p>
 
-embed images of results for first model
-Caption: The orange line on the left graph depicts our first model’s prediction of opening prices. The graph on the right shows the real data.
+![image](images/image3.png)
+The orange line depicts our first model’s prediction of opening prices
 
 <p align ="center">
   30 Days:
@@ -66,9 +66,13 @@ Caption: The orange line on the left graph depicts our first model’s predictio
   Model error: 1.84
 </p>
 
-Model trained on opening and unemployment data (Model 2)
-embed second set
-Caption: The orange line on the left graph depicts our first model’s prediction of opening prices. The graph on the right shows the real data.
+
+<p align ="center">
+  <b>Model trained on opening and unemployment data (Model 2)</b>
+    </p>
+    
+![image](images/image4.png)
+The orange line depicts our second model’s prediction of opening prices
 
 <p align ="center">
   30 Days:
@@ -88,9 +92,11 @@ Caption: The orange line on the left graph depicts our first model’s predictio
   Model: 0.662
 </p>
 
-Model trained on opening, unemployment, and housing data (Model 3)
-embed third set
-Caption: The orange line on the left graph depicts our first model’s prediction of opening prices. The graph on the right shows the real data.
+<p align ="center">
+  <b>Model trained on opening, unemployment, and housing data (Model 3)</b>
+    </p>
+![image](images/image5.png)
+The orange line depicts our third model’s prediction of opening prices
 
 <p align ="center">
   30 Days:
