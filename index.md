@@ -36,7 +36,7 @@ It’s essentially the same idea when it comes to predicting the price of stocks
 ## Datasets
 ![image](images/image2.png)
 <p align ="center">(Please note: the y-axis has no meaning, we overlayed the graphs for visual purposes)</p>
-
+<br />
 The data we use is fairly straightforward. Our main dataset is the opening price of Microsoft's stock from 1986 to 2017 from Kaggle. This gives us thousands of data points to work with. Our secondary datasets were the monthly unemployment rates and housing starts over the same period of time as the stock. Since Microsoft's stock is traded nearly every weekday of the year, it was necessary to interpolate the unemployment or housing starts on a given day in the month. 
 
 For this project, we trained three separate models, each trained on different sets of data. Our first model was trained using only the opening prices, the second model was trained with opening prices and unemployment, and the third model was trained with the prior two datasets as well as housing starts.
@@ -44,6 +44,49 @@ For this project, we trained three separate models, each trained on different se
 ## Results
 
 Before we jump right into the results, we think it’s best to clarify how we measured how well our models were predicting. We used a commonly used statistical measure of error known as root-mean-squared error (RMSE). RMSE is a measure of the differences between values predicted by a model and the values observed. So, in our case, we measured the difference between 30 predicted days by our model and real data from our large dataset (data that we didn’t train the model on). We compared this error to the error we presumed a human could get with basic guessing. Let’s say someone keeps guessing that tomorrow’s stock price will be the same as today, and they keep doing this over the course of the 30 day time period. This would produce an error that we could also apply RMSE to. This is what we called the ‘base error’ and it acted as a sort of benchmark. This is how each of our models performed:
+
+Model trained on only opening data (Model 1)
+
+embed images of results for first model
+Caption: The orange line on the left graph depicts our first model’s prediction of opening prices. The graph on the right shows the real data.
+
+<p align ="center">
+  30 Days:
+  Base error: 0.502
+  Model error: 1.84
+</p>
+
+Model trained on opening and unemployment data (Model 2)
+embed second set
+Caption: The orange line on the left graph depicts our first model’s prediction of opening prices. The graph on the right shows the real data.
+
+<p align ="center">
+  30 Days:
+  Base: 0.502
+  Model: 0.55
+</p>
+
+<p align ="center">
+  5 Days (1):
+  Base: 0.373
+  Model: 0.252
+</p>
+
+<p align ="center">
+  5 Days (2):
+  Base: 0.297
+  Model: 0.662
+</p>
+
+Model trained on opening, unemployment, and housing data (Model 3)
+embed third set
+Caption: The orange line on the left graph depicts our first model’s prediction of opening prices. The graph on the right shows the real data.
+
+<p align ="center">
+  30 Days:
+  Base: 0.502
+  Model: 0.752
+</p>
 
 ## Conclusions
 
