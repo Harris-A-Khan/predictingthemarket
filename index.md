@@ -61,11 +61,10 @@ We compared this error to the error we presumed a human could get with basic gue
 
 The orange line depicts our first model’s prediction of opening prices
 
-<p align ="center">
-  30 Days:
-  Base error: 0.502
-  Model error: 1.84
-</p>
+30 Days:
+Base error: 0.502
+Model error: 1.84
+
 <br />
 
 <p align ="center">
@@ -76,23 +75,18 @@ The orange line depicts our first model’s prediction of opening prices
 
 The orange line depicts our second model’s prediction of opening prices
 
-<p align ="center">
-  30 Days:
-  Base error: 0.502
-  Model error: 0.55
-</p>
+30 Days:
+Base error: 0.502
+Model error: 0.55
 
-<p align ="center">
-  5 Days (1):
-  Base error: 0.373
-  Model error: 0.252
-</p>
+5 Days (1):
+Base error: 0.373
+Model error: 0.252
 
-<p align ="center">
-  5 Days (2):
-  Base error: 0.297
-  Model error: 0.662
-</p>
+5 Days (2):
+Base error: 0.297
+Model error: 0.662
+
 <br />
 
 <p align ="center">
@@ -103,11 +97,9 @@ The orange line depicts our second model’s prediction of opening prices
 
 The orange line depicts our third model’s prediction of opening prices
 
-<p align ="center">
-  30 Days:
-  Base error: 0.502
-  Model error: 0.752
-</p>
+30 Days:
+Base error: 0.502
+Model error: 0.752
 
 ## Conclusions
 
