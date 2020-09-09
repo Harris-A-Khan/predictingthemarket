@@ -50,8 +50,7 @@ Before we jump right into the results, we think it’s best to clarify how we me
 <br />
 
 We compared this error to the error we presumed a human could get with basic guessing. Let’s say someone keeps guessing that tomorrow’s stock price will be the same as today, and they keep doing this over the course of the 30 day time period. This would produce an error that we could also apply RMSE to. This is what we called the ‘base error’ and it acted as a sort of benchmark. This is how each of our models performed:
-
-
+<br />
 
 <p align ="center">
   <b>Model trained on only opening data (Model 1)</b>
@@ -66,7 +65,7 @@ The orange line depicts our first model’s prediction of opening prices
   Base error: 0.502
   Model error: 1.84
 </p>
-
+<br />
 
 <p align ="center">
   <b>Model trained on opening and unemployment data (Model 2)</b>
@@ -93,6 +92,7 @@ The orange line depicts our second model’s prediction of opening prices
   Base error: 0.297
   Model error: 0.662
 </p>
+<br />
 
 <p align ="center">
   <b>Model trained on opening, unemployment, and housing data (Model 3)</b>
