@@ -78,20 +78,20 @@ The orange line depicts our second model’s prediction of opening prices
 
 <p align ="center">
   30 Days:
-  Base: 0.502
-  Model: 0.55
+  Base error: 0.502
+  Model error: 0.55
 </p>
 
 <p align ="center">
   5 Days (1):
-  Base: 0.373
-  Model: 0.252
+  Base error: 0.373
+  Model error: 0.252
 </p>
 
 <p align ="center">
   5 Days (2):
-  Base: 0.297
-  Model: 0.662
+  Base error: 0.297
+  Model error: 0.662
 </p>
 
 <p align ="center">
@@ -104,8 +104,8 @@ The orange line depicts our third model’s prediction of opening prices
 
 <p align ="center">
   30 Days:
-  Base: 0.502
-  Model: 0.752
+  Base error: 0.502
+  Model error: 0.752
 </p>
 
 ## Conclusions
