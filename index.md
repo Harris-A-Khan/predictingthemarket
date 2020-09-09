@@ -20,7 +20,9 @@ The question we wish to answer is very simple: can we predict day-to-day opening
 There are countless machine learning models, each with its own pros and cons. We decided to go with a model known as Long Short-Term Memory (LSTM), a type of Recurrent Neural Network (RNN). Why this model? For several reasons.
 
 1. The point of a stock analysis is to use trends in the data to predict future prices. A model that is incapable of taking into account past data (such as in the past 10, 15, or 30 days) is useless to us. Past data is key here. 
+
 2. LSTM models give us a simple way to process entire sequences of data (also known as time series data) and lets us extrapolate the following day(s).
+
 3. Vanilla RNN’s have a problem with a vanishing gradient, in other words the learning completely dissipates as the data reaches the end of the neural network. LSTM’s deal with this problem effectively by adding a unique additive gradient structure. 
 
 ### Understanding Time Series
@@ -56,8 +58,12 @@ There are 2 possible conclusions that can be drawn from this. The first is that 
 
 ## Moving Forward
 There are many different directions we could take this project in the future. We still aren’t very satisfied with the accuracy of our predictions. There are many ways we can go about tweaking the accuracy, though all involve trial and error:
-The first thing we thought about trying was using a different company’s stock. Under our current models, the predictions didn’t seem to pick up on patterns in the opening prices. The model performed very well when it came to predicting the training data, but when it came to predicting new data, it performed poorly. We think this happens because Microsoft stock is too volatile and unpredictable—there are no repeating patterns in the long-term. Perhaps a different company’s stock, specifically one outside the tech industry, would react differently to certain indicators and in turn become more predictable. Or, instead of just using one stock’s price, we use multiple and see if our model can pick up on trends between both sets of data.
-Regardless of which stock we choose to continue this project with, there are many changes we can make in creating our model.  
+
+	The first thing we thought about trying was using a different company’s stock. Under our current models, the predictions didn’t seem to pick up on patterns in the opening prices. The model performed very well when it came to predicting the training data, but when it came to predicting new data, it performed poorly. We think this happens because Microsoft stock is too volatile and unpredictable—there are no repeating patterns in the long-term. Perhaps a different company’s stock, specifically one outside the tech industry, would react differently to certain indicators and in turn become more predictable. Or, instead of just using one stock’s price, we use multiple and see if our model can pick up on trends between both sets of data.
+  
+	Regardless of which stock we choose to continue this project with, there are many changes we can make within the model itself. As discussed in our conclusions, the third model (opening, unemployment, and housing starts) performed worse than we expected. In this case, adding more data didn’t help with our predictions at all. Maybe the housing starts data wasn’t completely invaluable but rather it could have had its weight tweaked a little bit. By tweaking the importance of unemployment, housing starts, or future datasets relative to the opening data, we could probably hone in on a more accurate model. The problem with that is our lack of GPU power and ability to train this type of model in a short amount of time (each train took about an hour each).
+  
+	Lastly, we could look into using a multivariate LSTM model which is designed for multiple input series. In this project, the way we got our data into a usable form was by taking a bunch of lists of the 3 element triplets (opening, unemployment, housing starts) and then ‘flattening’ them into one larger list of those elements. This method is probably very inefficient and could have made our predictions less accurate, depending on how the computer interpreted the data. With a multivariate LSTM model, we can feed the data in parallel which could allow for better predictions of all three variables.
 
 
 ## Citations
