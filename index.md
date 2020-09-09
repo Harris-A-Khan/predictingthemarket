@@ -34,6 +34,8 @@ Suppose we want to use a machine learning model to predict the temperature tomor
 It’s essentially the same idea when it comes to predicting the price of stocks with different values. Our time step was 150 days, and we wanted to predict 30 days into the future. 
 
 ## Datasets
+![image](images/image2.png)
+<p align ="center">(Please note: the y-axis has no meaning, we overlayed the graphs for visual purposes)</p>
 
 The data we use is fairly straightforward. Our main dataset is the opening price of Microsoft's stock from 1986 to 2017 from Kaggle. This gives us thousands of data points to work with. Our secondary datasets were the monthly unemployment rates and housing starts over the same period of time as the stock. Since Microsoft's stock is traded nearly every weekday of the year, it was necessary to interpolate the unemployment or housing starts on a given day in the month. 
 
