@@ -35,7 +35,7 @@ It’s essentially the same idea when it comes to predicting the price of stocks
 
 ## Datasets
 ![image](images/image2.png)
-<p align ="center">(Please note: the y-axis has no meaning, we overlayed the graphs for visual purposes)</p>
+<p align ="center">Please note: the y-axis has no meaning, we overlayed the graphs for visual purposes</p>
 <br />
 The data we use is fairly straightforward. Our main dataset is the opening price of Microsoft's stock from 1986 to 2017 from Kaggle. This gives us thousands of data points to work with. Our secondary datasets were the monthly unemployment rates and housing starts over the same period of time as the stock. Since Microsoft's stock is traded nearly every weekday of the year, it was necessary to interpolate the unemployment or housing starts on a given day in the month. 
 
@@ -46,6 +46,8 @@ For this project, we trained three separate models, each trained on different se
 Before we jump right into the results, we think it’s best to clarify how we measured how well our models were predicting. We used a commonly used statistical measure of error known as root-mean-squared error (RMSE). RMSE is a measure of the differences between values predicted by a model and the values observed. So, in our case, we measured the difference between 30 predicted days by our model and real data from our large dataset (data that we didn’t train the model on). 
 
 ![image](images/imagermse.jpg)
+<p align ="center">Image depicted RMSE from https://www.hatarilabs.com/ih-en/how-to-calculate-the-root-mean-square-error-rmse-of-an-interpolated-ph-raster</p>
+<br />
 
 We compared this error to the error we presumed a human could get with basic guessing. Let’s say someone keeps guessing that tomorrow’s stock price will be the same as today, and they keep doing this over the course of the 30 day time period. This would produce an error that we could also apply RMSE to. This is what we called the ‘base error’ and it acted as a sort of benchmark. This is how each of our models performed:
 
