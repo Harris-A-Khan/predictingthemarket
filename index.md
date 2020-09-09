@@ -26,10 +26,8 @@ There are countless machine learning models, each with its own pros and cons. We
 3. Vanilla RNN’s have a problem with a vanishing gradient, in other words the learning completely dissipates as the data reaches the end of the neural network. LSTM’s deal with this problem effectively by adding a unique additive gradient structure. 
 
 ### Understanding Time Series
-<div align="center">
-  ![image](images/image1.png)
-</div>
-
+![image](images/image1.png)
+<div align="center">(Image from: [towardsdatascience.com](https://towardsdatascience.com/predicting-stock-price-with-lstm-13af86a74944)</div>
 
 Suppose we want to use a machine learning model to predict the temperature tomorrow. When we train our model, we want it to make predictions based off of three days prior. For example, if I want to know what the temperature will be on the 15th of this month, and I have the temperature for every day this month, I only want to use the temperature from the 12th, 13th, and 14th to make a prediction of the temperature on the 13th. This 3 day interval is what is known as the time step. We could get this model to predict the temperature over however many days we prefer but after a couple days it becomes random guessing. Suppose we wanted to use three days of temperatures to calculate the next three days. Temperatures from 12th, 13th, and 14th would be used to predict the temperature on the 15th. Then the data would shift one day over to predict the temperature on the 16th (Shift from 12th, 13th, 14th to 13th, 14th, and predicted 15th). It would do this predicting and shifting for however many days we specify. 
 
