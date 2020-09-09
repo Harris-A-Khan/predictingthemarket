@@ -58,6 +58,7 @@ We compared this error to the error we presumed a human could get with basic gue
     </p>
 
 ![image](images/image3.png)
+
 The orange line depicts our first model’s prediction of opening prices
 
 <p align ="center">
@@ -72,6 +73,7 @@ The orange line depicts our first model’s prediction of opening prices
     </p>
     
 ![image](images/image4.png)
+
 The orange line depicts our second model’s prediction of opening prices
 
 <p align ="center">
@@ -95,7 +97,9 @@ The orange line depicts our second model’s prediction of opening prices
 <p align ="center">
   <b>Model trained on opening, unemployment, and housing data (Model 3)</b>
     </p>
+    
 ![image](images/image5.png)
+
 The orange line depicts our third model’s prediction of opening prices
 
 <p align ="center">
